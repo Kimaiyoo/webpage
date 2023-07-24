@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width , initial-scale=1">
+        <link rel="stylesheet" href="style.css"/>
+        <script>  
+            function validateform(){  
+              var name=document.myform.name.value;
+              var password=document.myform.password.value;
+            if (name==null || name=="") {
+                alert("Name can't be blank");
+                return false;
+            }  
+ 
+            if(password.length<8){  
+              alert("Password must be at least 8 characters long.");  
+              return false;  
+              }  
+            }  
+            </script>  
+            
+    </head>
+    <body>
+            
+        <div class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a> 
+        </div>
+        <div class="sidebar">
+            <a href="./index.html">Home</a><br>
+            <a href="./about.html">About</a><br>
+            <a href="./contact.html">Contact</a><br>
+            <a href="./news.html" >News</a>
+        </div>
+        <div >
+            
+            </div>
+            <div class="flex-container">
+            <div id="div1">
+                <h1>SEAL SAFARIS</h1>
+                <h2>Welcome to Seal Safaris</h2>
+                <p>For experiences of a lifetime in Kenya and internationally,Travel with us</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7S2MtushpxoPyz9-ayAh7HyzNID-UwTohMMK4vlM5KMzxH45oDmfskGUjgWvW7eDsfKQ&usqp=CAU" alt="mapphoto"/>
+            </div>
+            <div id="div2">
+                <p>Don't know where to go?</p>
+                <p>Don't worry.We got you. We give travel advisories according to what you like.
+                    Updates on hot new places to travel on our <a href="./news.html">News</a> page.
+                </p>
+                <p>Add your name here to register for our news page:<br>
+                <form style="color: #ddd; " name="myform" method="post" action="./news.html" onsubmit="return validateform()" >  
+                    Name: <input type="text" name="name"><br/>  
+                    Password: <input type="password" name="password"><br/>  
+                    <input type="submit" value="register"> 
+                    </form>
+                    </p>
+            </div>
+            </div>
+            <div class="container">
+            <div id="div3">
+                <h3>Services we offer:</h3>
+                <p><ul style="display: inline-block; text-align: left;">
+                    <li>Travel Insights</li>
+                    <li>Flight bookings</li>
+                    <li>Hotel bookings</li>
+                    <li>Transport for local safaris</li>
+                </ul></p>
+            </div>
+            <div id="div4">
+                <p>
+                    Our location:<br>
+                    Second Floor,Zambezi House ,Off Kilimani Road.
+                </p>
+
+            </div>
+        </div>
+        <div class="footer">
+            <p>All Rights Reserved</p><br>
+            <p>© Copyright 2023</p>
+        </div>
+    </body>
+</html>
